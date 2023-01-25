@@ -1,2 +1,3 @@
 #!/bin/bash
-timedatectl set-timezone Asia/Tokyo
+read -p 'Enter your time zone. > '
+timedatectl set-timezone "$REPLY"
